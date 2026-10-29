@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>支持 — 软日 SoftDays</title>
+  <meta name="description" content="软日 SoftDays 使用帮助：倒数与正数、提醒、小组件、灵动岛与常见问题。" />
+  <link rel="alternate" hreflang="zh-Hans" href="support.html" />
+  <link rel="alternate" hreflang="en" href="en/support.html" />
+  <link rel="icon" href="assets/logo-256.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;600&family=Fraunces:opsz,wght@9..144,500;9..144,600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/styles.css" />
+</head>
+<body>
+  <header class="site-nav">
+    <a class="brand-lockup" href="index.html">
+      <img src="assets/logo-256.png" alt="" width="40" height="40" />
+      <span>软日</span>
+    </a>
+    <div class="nav-right">
+      <nav class="nav-links" aria-label="页面">
+        <a href="support.html" aria-current="page">支持</a>
+        <a href="privacy.html">隐私政策</a>
+        <a href="terms.html">用户协议</a>
+      </nav>
+      <nav class="lang-switch" aria-label="语言">
+        <a href="support.html" aria-current="page" lang="zh-Hans">中文</a>
+        <span aria-hidden="true">/</span>
+        <a href="en/support.html" lang="en" hreflang="en">EN</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="page">
+    <article class="page-panel">
+      <h1>支持</h1>
+      <p class="meta">软日 SoftDays · 轻轻倒数，甜甜记住</p>
+
+      <p>欢迎使用软日。若功能或权限遇到问题，可先看下面说明；仍无法解决时，请发邮件联系我们。</p>
+
+      <h2>常用功能</h2>
+      <ul>
+        <li><strong>展现方式</strong>：倒数到目标日；正数从开始日期累加「第几天」。</li>
+        <li><strong>里程碑提醒</strong>：正数可勾选 100 / 520 / 1314 天，或自定义天数。</li>
+        <li><strong>重复</strong>：每年、每月或一次性；每年支持农历重复。</li>
+        <li><strong>封面</strong>：编辑日子时可点封面选择照片。</li>
+        <li><strong>实时活动</strong>：倒数剩余 0 或 1 天时，可能出现在灵动岛 / 锁屏活动中。</li>
+      </ul>
+
+      <h2>小组件与手表</h2>
+      <ul>
+        <li>主屏：长按空白处 → 添加小组件 → 选「软日 / SoftDays」</li>
+        <li>锁屏：自定义锁屏 → 添加软日组件</li>
+        <li>Apple Watch：在手机打开软日并保存日子后，手表端会同步最近条目；表盘可添加对应复杂功能</li>
+      </ul>
+
+      <h2>常见问题</h2>
+      <p><strong>收不到通知？</strong><br />请到「设置 → 通知 → 软日」打开允许通知；一次性日子请确认已开启闹铃并设置时间。</p>
+      <p><strong>小组件是空的？</strong><br />请先在 App 内添加日子，再回到主屏等待刷新；也可在 App 设置中手动同步到小组件。</p>
+      <p><strong>灵动岛没有封面图？</strong><br />请确认该日子已设置封面，并在临近（今天 / 明天）时打开 App 刷新一次活动。</p>
+
+      <h2>系统要求</h2>
+      <ul>
+        <li>iPhone：iOS 17 及以上</li>
+        <li>Apple Watch：watchOS 10 及以上（可选）</li>
+      </ul>
+
+      <h2>联系我们</h2>
+      <p>邮箱：<a href="mailto:azir_likes@126.com">azir_likes@126.com</a></p>
+      <p>反馈时若方便，请附上：机型、系统版本、以及问题截图，我们会尽快回复。</p>
+
+      <p style="margin-top: 1.75rem;">
+        <a class="button button-primary" href="mailto:azir_likes@126.com">发送邮件</a>
+      </p>
+    </article>
+  </main>
+
+  <footer class="site-footer">
+    <span>© <span id="y"></span> 软日 SoftDays</span>
+    <span>
+      <a href="index.html">首页</a>
+      ·
+      <a href="privacy.html">隐私政策</a>
+      ·
+      <a href="terms.html">用户协议</a>
+      ·
+      <a href="en/support.html" hreflang="en">English</a>
+    </span>
+  </footer>
+  <script>
+    document.getElementById("y").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
