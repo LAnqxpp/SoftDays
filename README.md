@@ -1,54 +1,29 @@
-# 软日 SoftDays — App Store 网页资料
+# SoftDays / 软日 — 无文件夹网页包
 
-中文名：**软日** · 英文名：SoftDays  
-语言：**中文（默认）** + **English**（`en/`）
+只有 4 个 HTML 文件（CSS、Logo 已内嵌）。每个文件含 **中文 / English / 日本語**。
 
-本目录可直接托管到 GitHub Pages、Cloudflare Pages 或任意静态空间。
+| 文件 | App Store 用途 |
+|------|----------------|
+| `index.html` | 营销页（可选） |
+| `support.html` | **支持网址** |
+| `privacy.html` | **隐私政策网址** |
+| `terms.html` | 用户协议（可选） |
 
-| 用途 | 中文 | English | Connect 字段 |
-|------|------|---------|--------------|
-| 产品页 | `index.html` | `en/index.html` | 营销网址（可选） |
-| 支持 | `support.html` | `en/support.html` | **支持网址** |
-| 隐私政策 | `privacy.html` | `en/privacy.html` | **隐私政策网址** |
-| 用户协议 | `terms.html` | `en/terms.html` | 可选补充链接 |
+邮箱：`azir_likes@126.com`
 
-每页右上角有 **中文 / EN** 切换；页面含 `hreflang` 互链。
+## 推到 Git（命令行，不必网页传文件夹）
 
-## 建议填 Connect 的链接
-
-- 支持网址：`…/support.html`（英文用户可点页内 EN）
-- 隐私政策：`…/privacy.html`
-
-若希望英文区直达英文页，也可把营销网址设为 `…/en/`。
-
-## 本地预览
+在 GitHub 新建**空仓库**后：
 
 ```bash
-cd AppStoreMaterials
-python3 -m http.server 8080
-# http://localhost:8080
-# http://localhost:8080/en/
+cd AppStoreMaterials/publish
+git init
+git add index.html support.html privacy.html terms.html README.md
+git commit -m "Add SoftDays App Store pages (zh/en/ja, standalone)"
+git branch -M main
+git remote add origin <你的仓库 HTTPS 或 SSH 地址>
+git push -u origin main
 ```
 
-## 上架前请替换
-
-各页中的邮箱 `azir_likes@126.com`
-
-## 结构
-
-```
-AppStoreMaterials/
-  index.html          # 中文首页
-  support.html
-  privacy.html
-  terms.html          # 用户协议
-  en/
-    index.html
-    support.html
-    privacy.html
-    terms.html
-  assets/
-    styles.css
-    logo.png
-    logo-256.png
-```
+开启 GitHub Pages：Settings → Pages → Branch `main` → `/ (root)`。
+支持链接示例：`https://<用户名>.github.io/<仓库名>/support.html`
